@@ -3,6 +3,11 @@
 """
 Created on Fri Nov 17 16:10:54 2023
 
+12/14/2023 modification:
+- add vwap_5min, vwap_15min, vwap_30min
+- add trading time anaylsis
+- output trading volume, aum, commission fee, tax 
+
 @author: CHEN, Yuxing
 """
 import os
@@ -251,7 +256,7 @@ def tca_report(account_list, kf, start, end):
 
 #%%          
 if __name__ == '__main__':
-    start, end = '20230713', '20231212'
+    start, end = '20230713', '20231213'
     account_list = ['td.youxuanNo1-zx-normal-mf', 
                     'td.youxuanNo1-xiangcai-mf', 
                     'td.zz500-guojun-mf', 
